@@ -1,0 +1,181 @@
+/*colors
+#dark greeen = #213537
+#light blue = #2F7076
+#yellow = #E1C24A
+#ORANGE = #FAAF38
+*/
+
+
+html {
+    background-color: #213537;
+    position: relative;
+    margin: 8px;
+
+
+}
+
+body{
+    
+    margin: 100px ;
+    background-color: #213537;
+    margin: 8px;
+    padding: auto;
+
+}
+
+.navbar{
+    width: 400px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    left: 800px;
+    z-index: 9;
+
+
+}
+.link-group{
+    list-style: none;
+    display: flex;
+}
+
+
+.link a{
+    color: #2F7076;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1px 3px;
+    margin: 0 20px;
+    line-height: 8px;
+    transition: .5s;
+    font-size: 20px;
+ 
+}
+
+.link a:hover{
+    color: #E1C24A;
+}
+
+.navbar .link-group {
+    animation: 2.3s navbar;
+    animation-delay: 0s;
+}
+
+@keyframes navbar {
+    from {
+       margin-top: -500px;
+    }
+
+    to {
+      margin-bottom: 0%;
+    }
+ }
+ 
+
+ .card {
+    width: 350px;
+    height: 400px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+   	background: linear-gradient(to top, #2F7076, #213537);
+    opacity: 80%;
+    background-clip: border-box;
+    border: 1px solid #E1C24A;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 5px 0px #213537;
+    -moz-box-shadow: 0px 0px 5px 0px #213537;
+    box-shadow: 0px 0px 5px 0px #213537;
+    left: 100px;
+}
+
+
+
+span {
+  color: #FAAF38;
+  font-size: 90px;
+  margin-left:0px;
+}
+
+ #warning{
+    content: \26A0;
+    color: #FAAF38;
+    font-size: 90px;
+    margin-left:130px;
+  }
+
+h1{
+  font-family: 'Bebas Neue', cursive; 
+  font-size: 32px; 
+  text-align: center;
+  color: #FAAF38;
+}
+.button-19 {
+    appearance: button;
+    background-color: #E1C24A;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #213537;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    margin-left:10%;
+    white-space: nowrap;
+    width: 80%;
+    text-decoration: none;
+  }
+  
+  .button-19:after {
+    background-clip: padding-box;
+    background-color: #FAAF38;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .button-19:main,
+  .button-19:focus {
+    user-select: auto;
+  }
+  
+  .button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+  }
+  
+  .button-19:disabled {
+    cursor: auto;
+  }
+  
+  .position{
+    margin-left: 35%;
+    margin-top: 100px;
+    position: relative;
+  
+  
+  }

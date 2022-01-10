@@ -1,0 +1,518 @@
+/*colors
+#dark greeen = #213537
+#light blue = #2F7076
+#yellow = #E1C24A
+#ORANGE = #FAAF38
+*/
+
+html {
+    background-color: #213537;
+    position: relative;
+    
+    margin: 8px;
+
+
+}
+
+body{
+    
+  
+    background-color: #213537;
+    margin: 8px;
+    font-family: 'Bebas Neue', cursive;
+    width: 1000px;
+
+}
+
+
+/*Header*/
+.resume{
+    width: 400px;
+}
+
+.waviy {
+    position: relative;
+    left: -300px;
+    top: -30px;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #E1C24A; 
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 100px;
+  
+    animation: flip 5s infinite;
+    animation-delay: calc(.5s * var(--i))
+  }
+
+
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+  /* Popup */
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+
+  }
+
+
+  .popup h2 {
+    margin-top: 0;
+    color: #213537;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  .popup .close:hover {
+    color: #E1C24A;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .navbar{
+    width: 400px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+    left: 900px;
+    z-index: 9;
+
+
+}
+.link-group{
+    list-style: none;
+    display: flex;
+}
+
+
+.link a{
+    color: #2F7076;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1px 3px;
+    margin: 0 20px;
+    line-height: 8px;
+    transition: .5s;
+    font-size: 20px;
+ 
+}
+
+.link a:hover{
+    color: #E1C24A;
+}
+
+.navbar .link-group {
+    animation: 2.3s navbar;
+    animation-delay: 0s;
+}
+
+@keyframes navbar {
+    from {
+       margin-top: -500px;
+    }
+
+    to {
+      margin-bottom: 0%;
+    }
+ }
+
+ /* warningsign 
+ 
+
+ .card {
+    width: 350px;
+    height: 400px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+   	background: linear-gradient(to top, #2F7076, #213537);
+    opacity: 80%;
+    background-clip: border-box;
+    border: 1px solid #E1C24A;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 5px 0px #213537;
+    -moz-box-shadow: 0px 0px 5px 0px #213537;
+    box-shadow: 0px 0px 5px 0px #213537;
+}
+
+
+
+span {
+  color: #FAAF38;
+  font-size: 90px;
+  margin-left:0px;
+}
+
+ #warning{
+    content: \26A0;
+    color: #FAAF38;
+    font-size: 90px;
+    margin-left:130px;
+  }
+
+h1{
+  font-family: 'Bebas Neue', cursive; 
+  font-size: 32px; 
+  text-align: center;
+  color: #FAAF38;
+}
+*/
+/* CSS */
+.button-19 {
+  appearance: button;
+  background-color: #E1C24A;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #213537;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  margin-left:10%;
+  white-space: nowrap;
+  width: 80%;
+  text-decoration: none;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #FAAF38;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+.position{
+margin-left:45%;
+margin-top:100px;
+position: relative;
+
+
+}
+
+/*cards*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background:#213537;
+  font-family: 'Bebas Neue', cursive;
+}
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+ 
+  
+  margin-left: 200px;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+  background: #213537;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: #213537;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: #213537;
+}
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #213537;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: #E1C24A;
+  opacity: 30%;
+}
+
+body .container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #E1C24A;
+  color: #000;
+}
+
+/* Popup */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+
+  }
+
+
+  .popup h2 {
+    margin-top: 0;
+    color: #E1C24A;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+  }
+  .popup .close:hover {
+    color: #E1C24A;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+/* download button */
+.button-18 {
+  align-items: center;
+  background-color: #E1C24A;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #2F7076;
+  color: black;
+}
+
+.button-18:active {
+  background: #213537;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
